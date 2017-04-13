@@ -18,7 +18,7 @@ What is PlantUML?
 >[
 What is PlantUML?  -  PlantUML FAQ](http://PlantUML.me/faq)
 
-<img src="http://PlantUML.me/diagram/scruffy;scale:80/class/[Object]^-[System],[Object]^-[ClassLoader],[ClassLoader]^-[SecureClassLoader]"/>
+<img src="/src/test/resources/net/astah/plugin/yuml/Sample.png"/>
 
 Available for
 ---
