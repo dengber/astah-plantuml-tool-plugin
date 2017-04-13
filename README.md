@@ -1,14 +1,14 @@
-yUML tool for Astah
+PlantUML tool for Astah
 ============================
-This is an [Astah](http://astah.net/) plug-in which converts Astah diagrams into simple [yUML](http://yuml.me/) diagrams.
+This is an [Astah](http://astah.net/) plug-in which converts Astah diagrams into simple [PlantUML](http://PlantUML.me/) diagrams.
 
-It is drawing yUML diagrams by using the service at yUML. 
+It is drawing PlantUML diagrams by using the service at PlantUML. 
 
-<img src="https://raw.github.com/ChangeVision/astah-yuml-tool-plugin/master/src/main/images/screenshot.png" width="720"/>
+<img src="https://raw.github.com/ChangeVision/astah-PlantUML-tool-plugin/master/src/main/images/screenshot.png" width="720"/>
 
-What is yUML?
+What is PlantUML?
 ---
->yUML is an online tool for creating and publishing simple UML diagrams. It's makes it really easy for you to:
+>PlantUML is an online tool for creating and publishing simple UML diagrams. It's makes it really easy for you to:
 
 > * Embed UML diagrams in blogs, emails and wikis.
 > * Post UML diagrams in forums and blog comments.
@@ -16,9 +16,9 @@ What is yUML?
 > * Copy and paste UML diagrams into MS Word documents and Powerpoint presentations.
 >
 >[
-What is yUML?  -  yUML FAQ](http://yuml.me/faq)
+What is PlantUML?  -  PlantUML FAQ](http://PlantUML.me/faq)
 
-<img src="http://yuml.me/diagram/scruffy;scale:80/class/[Object]^-[System],[Object]^-[ClassLoader],[ClassLoader]^-[SecureClassLoader]"/>
+<img src="http://PlantUML.me/diagram/scruffy;scale:80/class/[Object]^-[System],[Object]^-[ClassLoader],[ClassLoader]^-[SecureClassLoader]"/>
 
 Available for
 ---
@@ -27,8 +27,8 @@ Available for
 
 How to install
 ---
-[Download jar file.](http://astah.change-vision.com/plugins/yuml/0.2.0.html)  
-Deploy the jar file you downloaded from [yUML tool for Astah](https://github.com/ChangeVision/astah-yuml-tool-plugin/downloads), in the **"plugins"** folder.
+[Download jar file.](http://astah.change-vision.com/plugins/PlantUML/0.2.0.html)  
+Deploy the jar file you downloaded from [PlantUML tool for Astah](https://github.com/ChangeVision/astah-PlantUML-tool-plugin/downloads), in the **"plugins"** folder.
 
  * e.g.) for Community edition
    
@@ -58,17 +58,17 @@ Usage
 ---
 1. Launch Astah
 1. Open the .asta file
-1. [yUML] is added under the [Tool]
-1. Select [Tool] - [yUML] - [Convert to yUML diagrams]
-   <img src="https://raw.github.com/ChangeVision/astah-yuml-tool-plugin/master/src/main/images/menu.png" width="640"/>
-1. Select a Class/Usecase diagram to convert into yUML diagram from the diagram list
-   <img src="https://raw.github.com/ChangeVision/astah-yuml-tool-plugin/master/src/main/images/screenshot.png" width="640"/>
+1. [PlantUML] is added under the [Tool]
+1. Select [Tool] - [PlantUML] - [Convert to PlantUML diagrams]
+   <img src="https://raw.github.com/ChangeVision/astah-PlantUML-tool-plugin/master/src/main/images/menu.png" width="640"/>
+1. Select a Class/Usecase diagram to convert into PlantUML diagram from the diagram list
+   <img src="https://raw.github.com/ChangeVision/astah-PlantUML-tool-plugin/master/src/main/images/screenshot.png" width="640"/>
 
 How to build
 ---
 1. Install the Astah Plug-in SDK - <http://astah.net/features/sdk>
-1. `git clone git://github.com/ChangeVision/astah-yuml-tool-plugin.git`
-1. `cd astah-yuml-tool-plugin`
+1. `git clone git://github.com/ChangeVision/astah-PlantUML-tool-plugin.git`
+1. `cd astah-PlantUML-tool-plugin`
 1. `astah-build`
 1. `astah-launch`
 
