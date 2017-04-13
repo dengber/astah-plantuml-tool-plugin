@@ -12,7 +12,7 @@ public class Generalization extends Relation {
 		super(presentation, left, right);
 	}
 
-	public String toYuml() {
+	public String toPlantuml() {
 		String left = ClassUtils.getNameLabel(getLeft());
 		String right = ClassUtils.getNameLabel(getRight());
 		return "[" + right + "]^[" + left + "]";

@@ -56,5 +56,5 @@ public abstract class DiagramBuilderBase {
 		return presentations;
 	}
 	
-	public abstract String toYuml();
+	public abstract String toPlantuml();
 }

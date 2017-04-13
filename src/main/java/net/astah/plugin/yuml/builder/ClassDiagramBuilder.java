@@ -57,45 +57,32 @@ public class ClassDiagramBuilder extends DiagramBuilderBase {
 		super(diagram, urlType, drawType, direction, size);
 	}
 
-	public String toYuml() {
+	public String toPlantuml() {
 		StringBuilder yumlBuilder = new StringBuilder();
-		yumlBuilder.append(DEFAULT_URL_PREFIX);
-		yumlBuilder.append(drawType);
-		yumlBuilder.append(";");
-		yumlBuilder.append("dir:");
-		yumlBuilder.append(direction);
-		yumlBuilder.append(";");
-		yumlBuilder.append("scale:");
-		yumlBuilder.append(size.getScale());
-		yumlBuilder.append(";");
-		yumlBuilder.append(DIAGRAM_TYPE);
+		yumlBuilder.append("@startuml\n");
+		
 		
 		List<Clazz> classes = extractClassesOn(diagram);
 		List<Relation> relations = extractRelationsOn(diagram);
 		
 		for (int i = 0; i < relations.size(); i++) {
-			if (i > 0) yumlBuilder.append(",");
 			Relation relation = relations.get(i);
 			classes.remove(relation.getLeft());
 			classes.remove(relation.getRight());
-			yumlBuilder.append(relation.toYuml());
+			yumlBuilder.append(relation.toPlantuml());
+			yumlBuilder.append("\n");
 			
-			logger.debug(relation.toYuml());
-		}
-		
-		if (relations.size() > 0 && classes.size() > 0) {
-			yumlBuilder.append(",");
+			logger.debug(relation.toPlantuml());
 		}
 		
 		for (int i = 0; i < classes.size(); i++) {
-			if (i > 0) yumlBuilder.append(",");
 			Clazz clazz = classes.get(i);
 			yumlBuilder.append(clazz.toYuml());
 			
 			logger.debug(clazz.toYuml());
 		}
 		
-		yumlBuilder.append(urlType);
+		yumlBuilder.append("@enduml");
 		return yumlBuilder.toString();
 	}
 	

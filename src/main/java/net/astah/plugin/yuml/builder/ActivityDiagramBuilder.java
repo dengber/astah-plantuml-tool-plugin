@@ -34,7 +34,7 @@ public class ActivityDiagramBuilder extends DiagramBuilderBase {
 		super(diagram, urlType, drawType, direction, size);
 	}
 	
-	public String toYuml() {
+	public String toPlantuml() {
 		return "No implementation";
 	}
 }

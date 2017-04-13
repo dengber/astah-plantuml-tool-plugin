@@ -98,21 +98,21 @@ public class YumlDiagramViewPane extends JPanel {
 	class RepaintButtonMouseListener extends MouseAdapter {
 		@Override
 		public void mouseClicked(MouseEvent evt) {
-			updateYumlContents(urlField.getText());
+			updatePlantumlContents(urlField.getText());
 		}
 	}
 	
 	public void updateContents(IDiagram diagram) {
-		String yumlUrl = "";
+		String PlantumlText = "";
 		if (diagram instanceof IClassDiagram) {
-			yumlUrl = new ClassDiagramBuilder((IClassDiagram) diagram).toYuml();
+			PlantumlText = new ClassDiagramBuilder((IClassDiagram) diagram).toPlantuml();
 		} else if (diagram instanceof IActivityDiagram) {
-			yumlUrl = new ActivityDiagramBuilder((IActivityDiagram) diagram).toYuml();
+			PlantumlText = new ActivityDiagramBuilder((IActivityDiagram) diagram).toPlantuml();
 		} else if (diagram instanceof IUseCaseDiagram) {
-			yumlUrl = new UseCaseDiagramBuilder((IUseCaseDiagram) diagram).toYuml();
+			PlantumlText = new UseCaseDiagramBuilder((IUseCaseDiagram) diagram).toPlantuml();
 		}
 		
-		updateYumlContents(yumlUrl);
+		updatePlantumlContents(PlantumlText);
 		updateAstahContents(diagram);
 	}
 	
@@ -141,7 +141,7 @@ public class YumlDiagramViewPane extends JPanel {
 		}.execute();
 	}
 	
-	private void updateYumlContents(final String yumlUrl) {
+	private void updatePlantumlContents(final String yumlUrl) {
 		urlField.setText(yumlUrl);
 		
 		new SwingWorker<Void, Void>() {

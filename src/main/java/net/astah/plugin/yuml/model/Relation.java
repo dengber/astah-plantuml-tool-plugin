@@ -29,7 +29,7 @@ public abstract class Relation {
 		return right;
 	}
 	
-	public abstract String toYuml();
+	public abstract String toPlantuml();
 	
 	
 	@Override

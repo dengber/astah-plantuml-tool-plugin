@@ -58,7 +58,7 @@ public class UseCaseDiagramBuilder extends DiagramBuilderBase {
 		super(diagram, urlType, drawType, direction, size);
 	}
 	
-	public String toYuml() {
+	public String toPlantuml() {
 		StringBuilder yumlBuilder = new StringBuilder();
 		yumlBuilder.append(DEFAULT_URL_PREFIX);
 		yumlBuilder.append(drawType);
@@ -79,9 +79,9 @@ public class UseCaseDiagramBuilder extends DiagramBuilderBase {
 			Relation relation = relations.get(i);
 			actorsAndUsecases.remove(relation.getLeft());
 			actorsAndUsecases.remove(relation.getRight());
-			yumlBuilder.append(relation.toYuml());
+			yumlBuilder.append(relation.toPlantuml());
 			
-			logger.debug(relation.toYuml());
+			logger.debug(relation.toPlantuml());
 		}
 		
 		if (relations.size() > 0 && actorsAndUsecases.size() > 0) {

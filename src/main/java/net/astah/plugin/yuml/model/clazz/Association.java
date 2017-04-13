@@ -15,17 +15,17 @@ public class Association extends Relation {
 		super(presentation, left, right);
 	}
 
-	public String toYuml() {
+	public String toPlantuml() {
 		IAttribute[] memberEnds = ((IAssociation) getPresentation().getModel()).getMemberEnds();
-		String connector = "-";
+		String connector = "--";
 		if (memberEnds[0].isAggregate()) {
-			connector = "+-";
+			connector = "o--";
 		} else if (memberEnds[1].isAggregate()) {
-			connector = "-+";
+			connector = "--o";
 		} else if (memberEnds[0].isComposite()) {
-			connector = "++-";
+			connector = "*--";
 		} else if (memberEnds[1].isComposite()) {
-			connector = "-++";
+			connector = "--*";
 		}
 		
 		if (memberEnds[0].getNavigability().equals("Navigable")) {
@@ -42,9 +42,9 @@ public class Association extends Relation {
 	private String getLabel(IClass classOrUsecase) {
 		String label = "";
 		if (classOrUsecase instanceof IUseCase) {
-			label = "(" + ClassUtils.getNameLabel(classOrUsecase) + ")";
+			label = ClassUtils.getNameLabel(classOrUsecase);
 		} else {
-			label = "[" + ClassUtils.getNameLabel(classOrUsecase) + "]";
+			label = ClassUtils.getNameLabel(classOrUsecase);
 		}
 		return label;
 	}

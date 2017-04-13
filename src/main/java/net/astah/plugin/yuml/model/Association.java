@@ -10,7 +10,7 @@ public class Association extends Relation {
 		super(presentation, left, right);
 	}
 
-	public String toYuml() {
+	public String toPlantuml() {
 		IAttribute[] memberEnds = ((IAssociation) getPresentation().getModel()).getMemberEnds();
 		String connector = "-";
 		if (memberEnds[0].isAggregate()) {

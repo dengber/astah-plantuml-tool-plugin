@@ -13,7 +13,7 @@ public class Association extends Relation {
 		super(presentation, left, right);
 	}
 
-	public String toYuml() {
+	public String toPlantuml() {
 		return getLabel(getLeft()) + "-" + getLabel(getRight());
 	}
 	
