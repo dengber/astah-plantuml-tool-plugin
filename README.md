@@ -56,8 +56,8 @@ Usage
 How to build
 ---
 1. Install the Astah Plug-in SDK - <http://astah.net/features/sdk>
-1. `git clone git://github.com/ChangeVision/astah-PlantUML-tool-plugin.git`
-1. `cd astah-PlantUML-tool-plugin`
+1. `git clone git://github.com/cuong0993/astah-plantuml-tool-plugin.git`
+1. `cd astah-plantUML-tool-plugin`
 1. `astah-build`
 1. `astah-launch`
 
