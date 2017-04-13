@@ -1,9 +1,6 @@
 PlantUML tool for Astah
 ============================
 This is an [Astah](http://astah.net/) plug-in which converts Astah diagrams into simple [PlantUML](http://PlantUML.me/) diagrams.
-
-It is drawing PlantUML diagrams by using the service at PlantUML. 
-
 <img src="https://raw.github.com/ChangeVision/astah-PlantUML-tool-plugin/master/src/main/images/screenshot.png" width="720"/>
 
 What is PlantUML?
