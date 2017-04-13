@@ -10,13 +10,7 @@ What is PlantUML?
 ---
 >PlantUML is an online tool for creating and publishing simple UML diagrams. It's makes it really easy for you to:
 
-> * Embed UML diagrams in blogs, emails and wikis.
-> * Post UML diagrams in forums and blog comments.
-> * Use directly within your web based bug tracking tool.
-> * Copy and paste UML diagrams into MS Word documents and Powerpoint presentations.
->
->[
-What is PlantUML?  -  PlantUML FAQ](http://PlantUML.me/faq)
+> * PlantUML is an open-source tool allowing users to create UML diagrams from a plain text language. The language of PlantUML is an example of a Application Specific Language. It uses Graphviz software to lay out its diagrams. It has been used to allow blind students to work with UML.PlantUML also helps blind software engineers to design and read UML diagrams.
 
 <img src="/src/test/resources/net/astah/plugin/yuml/Sample.png"/>
 
