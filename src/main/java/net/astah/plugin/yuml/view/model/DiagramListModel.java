@@ -1,27 +1,26 @@
 package net.astah.plugin.yuml.view.model;
 
-import java.util.List;
-
-import javax.swing.DefaultListModel;
-
 import com.change_vision.jude.api.inf.model.IDiagram;
 
+import javax.swing.*;
+import java.util.List;
+
 public class DiagramListModel extends DefaultListModel {
-	private static final long serialVersionUID = 5636401811346234264L;
-	
-	protected List<IDiagram> diagrams;
+    private static final long serialVersionUID = 5636401811346234264L;
 
-	public DiagramListModel(List<IDiagram> diagrams) {
-		this.diagrams = diagrams;
-	}
+    protected List<IDiagram> diagrams;
 
-	@Override
-	public Object getElementAt(int index) {
-		return diagrams.get(index);
-	}
+    public DiagramListModel(List<IDiagram> diagrams) {
+        this.diagrams = diagrams;
+    }
 
-	@Override
-	public int getSize() {
-		return diagrams.size();
-	}
+    @Override
+    public Object getElementAt(int index) {
+        return diagrams.get(index);
+    }
+
+    @Override
+    public int getSize() {
+        return diagrams.size();
+    }
 }
