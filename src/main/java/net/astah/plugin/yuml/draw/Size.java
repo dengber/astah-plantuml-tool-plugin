@@ -1,15 +1,15 @@
 package net.astah.plugin.yuml.draw;
 
-public enumSize{
-        TINY(60),SMALL(80),NORMAL(100),BIG(120),HUGE(180);
+public enum Size {
+    TINY(60), SMALL(80), NORMAL(100), BIG(120), HUGE(180);
 
-private int scale;
+    private int scale;
 
-        Size(int scale){
-        this.scale=scale;
-        }
+    Size(int scale) {
+        this.scale = scale;
+    }
 
-public int getScale(){
+    public int getScale() {
         return scale;
-        }
-        }
+    }
+}
