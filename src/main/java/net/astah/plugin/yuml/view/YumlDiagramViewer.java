@@ -21,7 +21,7 @@ public class YumlDiagramViewer extends JDialog {
     private DiagramListModel diagramListModel;
 
     public YumlDiagramViewer(Frame parent, List<IDiagram> diagrams) {
-        super(parent, "yUML diagram viewer", true);
+        super(parent, "PlantUML diagram viewer", true);
 
         this.diagrams = diagrams;
 

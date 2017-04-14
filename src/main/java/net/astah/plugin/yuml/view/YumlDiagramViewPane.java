@@ -38,7 +38,7 @@ public class YumlDiagramViewPane extends JPanel {
         yumlImageLabel.setHorizontalAlignment(SwingConstants.CENTER);
         yumlImageLabel.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 24));
         JScrollPane yumlPane = new JScrollPane(yumlImageLabel);
-        tabbedPane.addTab("yUML", yumlPane);
+        tabbedPane.addTab("PlantUML", yumlPane);
 
         astahImageLabel = new JLabel();
         astahImageLabel.setHorizontalAlignment(SwingConstants.CENTER);
@@ -144,7 +144,7 @@ public class YumlDiagramViewPane extends JPanel {
             ImageIcon imageIcon = new ImageIcon(new URL(uri.toASCIIString()));
             int status = imageIcon.getImageLoadStatus();
             if (status == MediaTracker.ABORTED || status == MediaTracker.ERRORED) {
-                return "yUML diagram can't be loaded.";
+                return "PlantUML diagram can't be loaded.";
             } else {
                 return imageIcon;
             }
