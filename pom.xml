@@ -10,7 +10,7 @@
 	</properties>
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.astah.plugin</groupId>
-	<artifactId>yuml</artifactId>
+	<artifactId>plantuml</artifactId>
 	<packaging>jar</packaging>
 	<name>%bundle.name</name>
 	<description>%bundle.description</description>
